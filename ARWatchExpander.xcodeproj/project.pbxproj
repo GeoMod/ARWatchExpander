@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,57 @@
 		18CEB55B2173A033002F03D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CEB5592173A033002F03D6 /* Main.storyboard */; };
 		18CEB55D2173A035002F03D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CEB55C2173A035002F03D6 /* Assets.xcassets */; };
 		18CEB5602173A035002F03D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CEB55E2173A035002F03D6 /* LaunchScreen.storyboard */; };
+		18CEB56D2173A20D002F03D6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CEB56B2173A20D002F03D6 /* Interface.storyboard */; };
+		18CEB56F2173A20E002F03D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CEB56E2173A20E002F03D6 /* Assets.xcassets */; };
+		18CEB5762173A20E002F03D6 /* ARWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 18CEB5752173A20E002F03D6 /* ARWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		18CEB57B2173A20E002F03D6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEB57A2173A20E002F03D6 /* InterfaceController.swift */; };
+		18CEB57D2173A20E002F03D6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEB57C2173A20E002F03D6 /* ExtensionDelegate.swift */; };
+		18CEB57F2173A20E002F03D6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CEB57E2173A20E002F03D6 /* NotificationController.swift */; };
+		18CEB5812173A20E002F03D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CEB5802173A20E002F03D6 /* Assets.xcassets */; };
+		18CEB5862173A20E002F03D6 /* ARWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 18CEB5692173A20D002F03D6 /* ARWatch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18CEB5772173A20E002F03D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CEB5482173A033002F03D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CEB5742173A20E002F03D6;
+			remoteInfo = "ARWatch Extension";
+		};
+		18CEB5842173A20E002F03D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CEB5482173A033002F03D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CEB5682173A20D002F03D6;
+			remoteInfo = ARWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18CEB58A2173A20E002F03D6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				18CEB5762173A20E002F03D6 /* ARWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CEB58E2173A20E002F03D6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				18CEB5862173A20E002F03D6 /* ARWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		18CEB5502173A033002F03D6 /* ARWatchExpander.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARWatchExpander.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +74,28 @@
 		18CEB55C2173A035002F03D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CEB55F2173A035002F03D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18CEB5612173A035002F03D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CEB5692173A20D002F03D6 /* ARWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CEB56C2173A20D002F03D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		18CEB56E2173A20E002F03D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18CEB5702173A20E002F03D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CEB5752173A20E002F03D6 /* ARWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ARWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CEB57A2173A20E002F03D6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		18CEB57C2173A20E002F03D6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		18CEB57E2173A20E002F03D6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		18CEB5802173A20E002F03D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18CEB5822173A20E002F03D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18CEB5832173A20E002F03D6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		18CEB54D2173A033002F03D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CEB5722173A20E002F03D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				18CEB5522173A033002F03D6 /* ARWatchExpander */,
+				18CEB56A2173A20D002F03D6 /* ARWatch */,
+				18CEB5792173A20E002F03D6 /* ARWatch Extension */,
 				18CEB5512173A033002F03D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				18CEB5502173A033002F03D6 /* ARWatchExpander.app */,
+				18CEB5692173A20D002F03D6 /* ARWatch.app */,
+				18CEB5752173A20E002F03D6 /* ARWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +139,29 @@
 			path = ARWatchExpander;
 			sourceTree = "<group>";
 		};
+		18CEB56A2173A20D002F03D6 /* ARWatch */ = {
+			isa = PBXGroup;
+			children = (
+				18CEB56B2173A20D002F03D6 /* Interface.storyboard */,
+				18CEB56E2173A20E002F03D6 /* Assets.xcassets */,
+				18CEB5702173A20E002F03D6 /* Info.plist */,
+			);
+			path = ARWatch;
+			sourceTree = "<group>";
+		};
+		18CEB5792173A20E002F03D6 /* ARWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				18CEB57A2173A20E002F03D6 /* InterfaceController.swift */,
+				18CEB57C2173A20E002F03D6 /* ExtensionDelegate.swift */,
+				18CEB57E2173A20E002F03D6 /* NotificationController.swift */,
+				18CEB5802173A20E002F03D6 /* Assets.xcassets */,
+				18CEB5822173A20E002F03D6 /* Info.plist */,
+				18CEB5832173A20E002F03D6 /* PushNotificationPayload.apns */,
+			);
+			path = "ARWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +172,51 @@
 				18CEB54C2173A033002F03D6 /* Sources */,
 				18CEB54D2173A033002F03D6 /* Frameworks */,
 				18CEB54E2173A033002F03D6 /* Resources */,
+				18CEB58E2173A20E002F03D6 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				18CEB5852173A20E002F03D6 /* PBXTargetDependency */,
 			);
 			name = ARWatchExpander;
 			productName = ARWatchExpander;
 			productReference = 18CEB5502173A033002F03D6 /* ARWatchExpander.app */;
 			productType = "com.apple.product-type.application";
+		};
+		18CEB5682173A20D002F03D6 /* ARWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CEB58B2173A20E002F03D6 /* Build configuration list for PBXNativeTarget "ARWatch" */;
+			buildPhases = (
+				18CEB5672173A20D002F03D6 /* Resources */,
+				18CEB58A2173A20E002F03D6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18CEB5782173A20E002F03D6 /* PBXTargetDependency */,
+			);
+			name = ARWatch;
+			productName = ARWatch;
+			productReference = 18CEB5692173A20D002F03D6 /* ARWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		18CEB5742173A20E002F03D6 /* ARWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CEB5872173A20E002F03D6 /* Build configuration list for PBXNativeTarget "ARWatch Extension" */;
+			buildPhases = (
+				18CEB5712173A20E002F03D6 /* Sources */,
+				18CEB5722173A20E002F03D6 /* Frameworks */,
+				18CEB5732173A20E002F03D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ARWatch Extension";
+			productName = "ARWatch Extension";
+			productReference = 18CEB5752173A20E002F03D6 /* ARWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,10 +231,16 @@
 					18CEB54F2173A033002F03D6 = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					18CEB5682173A20D002F03D6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					18CEB5742173A20E002F03D6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = 18CEB54B2173A033002F03D6 /* Build configuration list for PBXProject "ARWatchExpander" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -116,6 +253,8 @@
 			projectRoot = "";
 			targets = (
 				18CEB54F2173A033002F03D6 /* ARWatchExpander */,
+				18CEB5682173A20D002F03D6 /* ARWatch */,
+				18CEB5742173A20E002F03D6 /* ARWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -132,6 +271,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18CEB5672173A20D002F03D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CEB56F2173A20E002F03D6 /* Assets.xcassets in Resources */,
+				18CEB56D2173A20D002F03D6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CEB5732173A20E002F03D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CEB5812173A20E002F03D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -144,7 +300,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18CEB5712173A20E002F03D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CEB57F2173A20E002F03D6 /* NotificationController.swift in Sources */,
+				18CEB57D2173A20E002F03D6 /* ExtensionDelegate.swift in Sources */,
+				18CEB57B2173A20E002F03D6 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18CEB5782173A20E002F03D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CEB5742173A20E002F03D6 /* ARWatch Extension */;
+			targetProxy = 18CEB5772173A20E002F03D6 /* PBXContainerItemProxy */;
+		};
+		18CEB5852173A20E002F03D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CEB5682173A20D002F03D6 /* ARWatch */;
+			targetProxy = 18CEB5842173A20E002F03D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18CEB5592173A033002F03D6 /* Main.storyboard */ = {
@@ -161,6 +340,14 @@
 				18CEB55F2173A035002F03D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		18CEB56B2173A20D002F03D6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CEB56C2173A20D002F03D6 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -318,6 +505,88 @@
 			};
 			name = Release;
 		};
+		18CEB5882173A20E002F03D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Q332864D3;
+				INFOPLIST_FILE = "ARWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ImpulseCoupledDevelopment.ARWatchExpander.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		18CEB5892173A20E002F03D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Q332864D3;
+				INFOPLIST_FILE = "ARWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ImpulseCoupledDevelopment.ARWatchExpander.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		18CEB58C2173A20E002F03D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Q332864D3;
+				IBSC_MODULE = ARWatch_Extension;
+				INFOPLIST_FILE = ARWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = ImpulseCoupledDevelopment.ARWatchExpander.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		18CEB58D2173A20E002F03D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Q332864D3;
+				IBSC_MODULE = ARWatch_Extension;
+				INFOPLIST_FILE = ARWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = ImpulseCoupledDevelopment.ARWatchExpander.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +604,24 @@
 			buildConfigurations = (
 				18CEB5652173A035002F03D6 /* Debug */,
 				18CEB5662173A035002F03D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CEB5872173A20E002F03D6 /* Build configuration list for PBXNativeTarget "ARWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CEB5882173A20E002F03D6 /* Debug */,
+				18CEB5892173A20E002F03D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CEB58B2173A20E002F03D6 /* Build configuration list for PBXNativeTarget "ARWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CEB58C2173A20E002F03D6 /* Debug */,
+				18CEB58D2173A20E002F03D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

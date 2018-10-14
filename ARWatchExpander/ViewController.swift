@@ -16,17 +16,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Set the view's delegate
         sceneView.delegate = self
-        
-        // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
-        
+        sceneView.autoenablesDefaultLighting = true
+        sceneView.automaticallyUpdatesLighting = true
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        
-        // Set the scene to the view
+        let scene = SCNScene()
         sceneView.scene = scene
     }
     
@@ -34,9 +28,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
-
-        // Run the view's session
+        let configuration = ARImageTrackingConfiguration()
+        guard let trackedImage = ARReferenceImage.referenceImages(inGroupNamed: "watchFaces", bundle: nil) else { return }
+        configuration.trackingImages = trackedImage
+        configuration.maximumNumberOfTrackedImages = 1
+        
+        
+        // Consider adding world tracking so the watch expanded plane can be moved around the world space.
+        // code
+        
         sceneView.session.run(configuration)
     }
     
